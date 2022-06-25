@@ -13,7 +13,7 @@ $ go get github.com/fsrv-xyz/distro-info
 ```
 
 ### usage
-See the contents of the [example directory](https://github.com/fsrv-xyz/distroinfo/example) for basic usage.
+See the contents of the [example directory](https://github.com/fsrv-xyz/distroinfo/tree/master/example) for basic usage.
 
 ---
 
