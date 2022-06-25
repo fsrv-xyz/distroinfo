@@ -22,9 +22,10 @@ See the contents of the [example directory](https://github.com/fsrv-xyz/distroin
 The `distroinfo` package is updated regularly. If you need to update the information on your own, you can use the generate script inside the `data` directory.
 
 Requirements:
-* python3
 * bash
 * curl
+* jq
+* python3
 * an internet connection ;)
 
 The current version of the latest debian package is pinned in [generate.go](https://github.com/fsrv-xyz/distroinfo/blob/master/generate.go).
