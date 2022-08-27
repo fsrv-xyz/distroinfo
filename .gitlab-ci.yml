@@ -36,7 +36,7 @@ go_test:
       junit: report.xml
 
 check update:
-  image: registry.fsrv.services/debian-base:latest
+  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest
   stage: update-check
   needs:
     - go_fmt
@@ -54,7 +54,7 @@ check update:
       - data/*.json
 
 commit_update:
-  image: registry.fsrv.services/debian-base:latest
+  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest
   stage: update
   needs:
     - check update
