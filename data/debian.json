@@ -180,6 +180,16 @@
     "eol-elts": null
   },
   {
+    "version": "14",
+    "codename": "Forky",
+    "series": "forky",
+    "created": "2025-08-01",
+    "release": null,
+    "eol": null,
+    "eol-lts": null,
+    "eol-elts": null
+  },
+  {
     "version": "",
     "codename": "Sid",
     "series": "sid",

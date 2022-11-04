@@ -368,5 +368,15 @@
     "eol": "2023-07-20",
     "eol-server": null,
     "eol-esm": null
+  },
+  {
+    "version": "23.04",
+    "codename": "Lunar Lobster",
+    "series": "lunar",
+    "created": "2022-10-20",
+    "release": "2023-04-20",
+    "eol": "2024-01-25",
+    "eol-server": null,
+    "eol-esm": null
   }
 ]
