@@ -1,3 +1,3 @@
 module github.com/fsrv-xyz/distroinfo
 
-go 1.18
+go 1.19
