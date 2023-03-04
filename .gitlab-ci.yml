@@ -4,51 +4,28 @@ stages:
   - update-check
   - update
 
-lint:
-  image: registry.gitlab.com/gitlab-org/gitlab-build-images:golangci-lint-alpine
+.go_template_defaults:
   stage: test
-  script:
-    - golangci-lint run ./... --issues-exit-code 0 --out-format code-climate | tee gl-code-quality-report.json | jq -r '.[] | "\(.location.path):\(.location.lines.begin) \(.description)"'
-  artifacts:
-    reports:
-      codequality: gl-code-quality-report.json
-    paths:
-      - gl-code-quality-report.json
-
-go_fmt:
-  image: golang
-  stage: test
-  script:
-    - go fmt ./...
-
-go_test:
-  image: golang
-  stage: test
-  before_script:
-    - go install gotest.tools/gotestsum@latest
-  script:
-    - go fmt ./...
-    - go test -v ./...
-    - /go/bin/gotestsum --junitfile report.xml --format testname
-  artifacts:
-    when: always
-    reports:
-      junit: report.xml
+  allow_failure: true
+include:
+  - remote: https://gitlab.com/bonsai-oss/organization/ci-templates/-/raw/main/templates/language/go.yml
 
 check update:
   image: registry.fsrv.services/fsrvcorp/container/debian-base:latest
   stage: update-check
-  needs:
-    - go_fmt
-    - go_test
-    - lint
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
   before_script:
     - apt update
     - apt install -y curl python3 bash jq
   script:
     - export DEB_VERSION=$(curl https://sources.debian.org/api/src/distro-info-data/ | jq -r '.versions[0].version')
     - bash -x data/generator.sh ubuntu,debian $DEB_VERSION
+    - echo "DEB_VERSION=$DEB_VERSION" > data.env
   artifacts:
+    reports:
+      dotenv:
+        - data.env
     when: always
     paths:
       - data/*.json
@@ -56,6 +33,8 @@ check update:
 commit_update:
   image: registry.fsrv.services/fsrvcorp/container/debian-base:latest
   stage: update
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
   needs:
     - check update
   before_script:
@@ -71,13 +50,12 @@ commit_update:
   script:
     - |
       if test -n "$(git status --porcelain)"; then
-        git checkout -b "update_deb_$(date +%F_%H-%M)"
+        git checkout -b "update_deb_${DEB_VERSION}"
         git add data/*.json
-        git commit -m "update dist-info-data debian package $(date +%F_%H:%M)"
+        git commit -m "update dist-info-data debian package ${DEB_VERSION}"
         git push update_origin HEAD -o merge_request.create \
           -o merge_request.target=${CI_DEFAULT_BRANCH} \
           -o merge_request.assign=${GITLAB_USER_LOGIN} \
-          -o merge_request.title="update dist-info-data debian package $(date +%F_%H:%M)" \
+          -o merge_request.title="update dist-info-data debian package ${DEB_VERSION}" \
           -o merge_request.label="Source::CI"
       fi
-
