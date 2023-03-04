@@ -74,6 +74,10 @@ commit_update:
         git checkout -b "update_deb_$(date +%F_%H-%M)"
         git add data/*.json
         git commit -m "update dist-info-data debian package $(date +%F_%H:%M)"
-        git push update_origin HEAD
+        git push update_origin HEAD -o merge_request.create \
+          -o merge_request.target=${CI_DEFAULT_BRANCH} \
+          -o merge_request.assign=${GITLAB_USER_LOGIN} \
+          -o merge_request.title="update dist-info-data debian package $(date +%F_%H:%M)" \
+          -o merge_request.label="Source::CI"
       fi
 
