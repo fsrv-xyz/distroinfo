@@ -4,22 +4,11 @@ import (
 	"errors"
 	"sort"
 	"strings"
-	"time"
 )
 
 var (
 	DistroFamilyNotFoundError  = errors.New("distro family not found")
 	DistroVersionNotFoundError = errors.New("distro version not found")
-)
-
-type SupportPeriod int
-
-const (
-	Unsupported SupportPeriod = iota
-	Unreleased
-	StandardSupport
-	LongTermSupport
-	ExtendedLongTermSupport
 )
 
 func GetDistroInfoByVersion(distro string, version string) (*DistroInfo, error) {
@@ -78,44 +67,4 @@ func GetSupportedDistroVersions(distro string) (map[string]SupportPeriod, error)
 		versions[distroInfoEntry.Version] = period
 	}
 	return versions, nil
-}
-
-func getSupportPeriod(distroInfoEntry DistroInfo) SupportPeriod {
-	var isLts bool
-	var isELts bool
-	var isStandard bool
-
-	if distroInfoEntry.Release != nil && distroInfoEntry.Release.After(time.Now()) {
-		return Unreleased
-	}
-
-	if distroInfoEntry.Eol != nil && distroInfoEntry.Eol.After(time.Now()) {
-		isStandard = true
-	}
-
-	if distroInfoEntry.EolLts != nil && distroInfoEntry.EolLts.After(time.Now()) {
-		isLts = true
-	}
-
-	if distroInfoEntry.EolEsm != nil && distroInfoEntry.EolEsm.After(time.Now()) {
-		isLts = true
-	}
-
-	if distroInfoEntry.EolElts != nil && distroInfoEntry.EolElts.After(time.Now()) {
-		isELts = true
-	}
-
-	if isStandard {
-		return StandardSupport
-	}
-
-	if isLts && !isStandard {
-		return LongTermSupport
-	}
-
-	if isELts && !isStandard && !isLts {
-		return ExtendedLongTermSupport
-	}
-
-	return Unsupported
 }
