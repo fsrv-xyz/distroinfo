@@ -6,43 +6,15 @@ import (
 	"io/fs"
 	"path/filepath"
 	"strings"
-	"time"
 )
 
 // generates json files for distro information
 // run go generate to regenerate the files
 // see https://sources.debian.org/src/distro-info-data/ for updating the version
-//go:generate bash data/generator.sh debian,ubuntu 0.53
+//go:generate bash data/generator.sh debian,ubuntu 0.58
 
 //go:embed data/*.json
 var distroInfoFS embed.FS
-
-type TimeStamp struct {
-	time.Time
-}
-
-func (t *TimeStamp) UnmarshalJSON(b []byte) error {
-	s := strings.Trim(string(b), `"`)
-	if s == "" {
-		return nil
-	}
-	var err error
-	t.Time, err = time.Parse("2006-01-02", s)
-	return err
-}
-
-// DistroInfo holds distro information
-type DistroInfo struct {
-	Version  string     `json:"version"`
-	Codename string     `json:"codename"`
-	Series   string     `json:"series"`
-	Created  *TimeStamp `json:"created"`
-	Release  *TimeStamp `json:"release"`
-	Eol      *TimeStamp `json:"eol"`
-	EolLts   *TimeStamp `json:"eol-lts"`
-	EolElts  *TimeStamp `json:"eol-elts"`
-	EolEsm   *TimeStamp `json:"eol-esm"`
-}
 
 var distroInfoStore = map[string][]DistroInfo{}
 
@@ -50,6 +22,7 @@ func init() {
 	parseDistroInfoData()
 }
 
+// parseDistroInfoData parses the embedded distro info data
 func parseDistroInfoData() {
 	// get file list from embedded data directory
 	dirEntries, distroInfoFSReadError := distroInfoFS.ReadDir("data")
