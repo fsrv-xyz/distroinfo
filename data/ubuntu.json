@@ -45,7 +45,7 @@
     "series": "edgy",
     "created": "2006-06-01",
     "release": "2006-10-26",
-    "eol": "2008-04-26",
+    "eol": "2008-04-25",
     "eol-server": null,
     "eol-esm": null
   },
@@ -157,7 +157,7 @@
     "release": "2012-04-26",
     "eol": "2017-04-28",
     "eol-server": "2017-04-28",
-    "eol-esm": "2019-04-28"
+    "eol-esm": "2019-04-26"
   },
   {
     "version": "12.10",
@@ -235,8 +235,8 @@
     "series": "xenial",
     "created": "2015-10-22",
     "release": "2016-04-21",
-    "eol": "2021-04-21",
-    "eol-server": "2021-04-21",
+    "eol": "2021-04-30",
+    "eol-server": "2021-04-30",
     "eol-esm": "2026-04-23"
   },
   {
@@ -388,5 +388,15 @@
     "eol": "2024-07-11",
     "eol-server": null,
     "eol-esm": null
+  },
+  {
+    "version": "24.04 LTS",
+    "codename": "Noble Numbat",
+    "series": "noble",
+    "created": "2023-10-12",
+    "release": "2024-04-25",
+    "eol": "2029-05-31",
+    "eol-server": "2029-05-31",
+    "eol-esm": "2034-04-25"
   }
 ]
