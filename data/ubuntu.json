@@ -398,5 +398,15 @@
     "eol": "2029-05-31",
     "eol-server": "2029-05-31",
     "eol-esm": "2034-04-25"
+  },
+  {
+    "version": "24.10",
+    "codename": "Oracular Oriole",
+    "series": "oracular",
+    "created": "2024-04-25",
+    "release": "2024-10-10",
+    "eol": "2025-07-10",
+    "eol-server": null,
+    "eol-esm": null
   }
 ]
