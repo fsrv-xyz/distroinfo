@@ -408,5 +408,15 @@
     "eol": "2025-07-10",
     "eol-server": null,
     "eol-esm": null
+  },
+  {
+    "version": "25.04",
+    "codename": "Plucky Puffin",
+    "series": "plucky",
+    "created": "2024-10-10",
+    "release": "2025-04-17",
+    "eol": "2026-01-15",
+    "eol-server": null,
+    "eol-esm": null
   }
 ]
