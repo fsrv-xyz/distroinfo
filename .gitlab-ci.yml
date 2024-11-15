@@ -11,7 +11,7 @@ include:
   - remote: https://gitlab.com/bonsai-oss/organization/ci-templates/-/raw/main/templates/language/go.yml
 
 check update:
-  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:f175ca6dfd9f34504576b206166fa7bdb10bef2a9130d5279409caaba7a1e392
+  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:6f21448a652ebc5af0c53a832371af4da7a9e8a2f54b7740239418b2b39eb33b
   stage: update-check
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
@@ -31,7 +31,7 @@ check update:
       - data/*.json
 
 commit_update:
-  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:f175ca6dfd9f34504576b206166fa7bdb10bef2a9130d5279409caaba7a1e392
+  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:6f21448a652ebc5af0c53a832371af4da7a9e8a2f54b7740239418b2b39eb33b
   stage: update
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
