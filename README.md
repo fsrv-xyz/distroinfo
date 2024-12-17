@@ -9,7 +9,7 @@ This package makes these information usable inside golang projects.
 
 ### installation
 ```shell
-$ go get github.com/fsrv-xyz/distro-info
+$ go get github.com/fsrv-xyz/distroinfo
 ```
 
 ### usage
