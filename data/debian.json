@@ -190,6 +190,16 @@
     "eol-elts": null
   },
   {
+    "version": "15",
+    "codename": "Duke",
+    "series": "duke",
+    "created": "2027-08-01",
+    "release": null,
+    "eol": null,
+    "eol-lts": null,
+    "eol-elts": null
+  },
+  {
     "version": "",
     "codename": "Sid",
     "series": "sid",
