@@ -7,7 +7,8 @@
     "release": "2004-10-20",
     "eol": "2006-04-30",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "5.04",
@@ -17,7 +18,8 @@
     "release": "2005-04-08",
     "eol": "2006-10-31",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "5.10",
@@ -27,7 +29,8 @@
     "release": "2005-10-12",
     "eol": "2007-04-13",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "6.06 LTS",
@@ -37,7 +40,8 @@
     "release": "2006-06-01",
     "eol": "2009-07-14",
     "eol-server": "2011-06-01",
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "6.10",
@@ -47,7 +51,8 @@
     "release": "2006-10-26",
     "eol": "2008-04-25",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "7.04",
@@ -57,7 +62,8 @@
     "release": "2007-04-19",
     "eol": "2008-10-19",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "7.10",
@@ -67,7 +73,8 @@
     "release": "2007-10-18",
     "eol": "2009-04-18",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "8.04 LTS",
@@ -77,7 +84,8 @@
     "release": "2008-04-24",
     "eol": "2011-05-12",
     "eol-server": "2013-05-09",
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "8.10",
@@ -87,7 +95,8 @@
     "release": "2008-10-30",
     "eol": "2010-04-30",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "9.04",
@@ -97,7 +106,8 @@
     "release": "2009-04-23",
     "eol": "2010-10-23",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "9.10",
@@ -107,7 +117,8 @@
     "release": "2009-10-29",
     "eol": "2011-04-30",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "10.04 LTS",
@@ -117,7 +128,8 @@
     "release": "2010-04-29",
     "eol": "2013-05-09",
     "eol-server": "2015-04-30",
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "10.10",
@@ -127,7 +139,8 @@
     "release": "2010-10-10",
     "eol": "2012-04-10",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "11.04",
@@ -137,7 +150,8 @@
     "release": "2011-04-28",
     "eol": "2012-10-28",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "11.10",
@@ -147,7 +161,8 @@
     "release": "2011-10-13",
     "eol": "2013-05-09",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "12.04 LTS",
@@ -157,7 +172,8 @@
     "release": "2012-04-26",
     "eol": "2017-04-28",
     "eol-server": "2017-04-28",
-    "eol-esm": "2019-04-26"
+    "eol-esm": "2019-04-26",
+    "eol-legacy": null
   },
   {
     "version": "12.10",
@@ -167,7 +183,8 @@
     "release": "2012-10-18",
     "eol": "2014-05-16",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "13.04",
@@ -177,7 +194,8 @@
     "release": "2013-04-25",
     "eol": "2014-01-27",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "13.10",
@@ -187,7 +205,8 @@
     "release": "2013-10-17",
     "eol": "2014-07-17",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "14.04 LTS",
@@ -197,7 +216,8 @@
     "release": "2014-04-17",
     "eol": "2019-04-25",
     "eol-server": "2019-04-25",
-    "eol-esm": "2024-04-25"
+    "eol-esm": "2024-04-25",
+    "eol-legacy": "2026-04-28"
   },
   {
     "version": "14.10",
@@ -207,7 +227,8 @@
     "release": "2014-10-23",
     "eol": "2015-07-23",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "15.04",
@@ -217,7 +238,8 @@
     "release": "2015-04-23",
     "eol": "2016-02-04",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "15.10",
@@ -227,7 +249,8 @@
     "release": "2015-10-22",
     "eol": "2016-07-28",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "16.04 LTS",
@@ -237,7 +260,8 @@
     "release": "2016-04-21",
     "eol": "2021-04-30",
     "eol-server": "2021-04-30",
-    "eol-esm": "2026-04-23"
+    "eol-esm": "2026-04-23",
+    "eol-legacy": "2028-04-25"
   },
   {
     "version": "16.10",
@@ -247,7 +271,8 @@
     "release": "2016-10-13",
     "eol": "2017-07-20",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "17.04",
@@ -257,7 +282,8 @@
     "release": "2017-04-13",
     "eol": "2018-01-13",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "17.10",
@@ -267,7 +293,8 @@
     "release": "2017-10-19",
     "eol": "2018-07-19",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "18.04 LTS",
@@ -277,7 +304,8 @@
     "release": "2018-04-26",
     "eol": "2023-05-31",
     "eol-server": "2023-05-31",
-    "eol-esm": "2028-04-26"
+    "eol-esm": "2028-04-26",
+    "eol-legacy": "2030-04-30"
   },
   {
     "version": "18.10",
@@ -287,7 +315,8 @@
     "release": "2018-10-18",
     "eol": "2019-07-18",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "19.04",
@@ -297,7 +326,8 @@
     "release": "2019-04-18",
     "eol": "2020-01-23",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "19.10",
@@ -307,7 +337,8 @@
     "release": "2019-10-17",
     "eol": "2020-07-17",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "20.04 LTS",
@@ -317,7 +348,8 @@
     "release": "2020-04-23",
     "eol": "2025-05-29",
     "eol-server": "2025-05-29",
-    "eol-esm": "2030-04-23"
+    "eol-esm": "2030-04-23",
+    "eol-legacy": "2032-04-27"
   },
   {
     "version": "20.10",
@@ -327,7 +359,8 @@
     "release": "2020-10-22",
     "eol": "2021-07-22",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "21.04",
@@ -337,7 +370,8 @@
     "release": "2021-04-22",
     "eol": "2022-01-20",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "21.10",
@@ -347,7 +381,8 @@
     "release": "2021-10-14",
     "eol": "2022-07-14",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "22.04 LTS",
@@ -357,7 +392,8 @@
     "release": "2022-04-21",
     "eol": "2027-06-01",
     "eol-server": "2027-06-01",
-    "eol-esm": "2032-04-21"
+    "eol-esm": "2032-04-21",
+    "eol-legacy": "2034-04-25"
   },
   {
     "version": "22.10",
@@ -367,7 +403,8 @@
     "release": "2022-10-20",
     "eol": "2023-07-20",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "23.04",
@@ -377,7 +414,8 @@
     "release": "2023-04-20",
     "eol": "2024-01-25",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "23.10",
@@ -387,7 +425,8 @@
     "release": "2023-10-12",
     "eol": "2024-07-11",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "24.04 LTS",
@@ -397,7 +436,8 @@
     "release": "2024-04-25",
     "eol": "2029-05-31",
     "eol-server": "2029-05-31",
-    "eol-esm": "2034-04-25"
+    "eol-esm": "2034-04-25",
+    "eol-legacy": "2036-04-29"
   },
   {
     "version": "24.10",
@@ -407,7 +447,8 @@
     "release": "2024-10-10",
     "eol": "2025-07-10",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "25.04",
@@ -417,7 +458,8 @@
     "release": "2025-04-17",
     "eol": "2026-01-15",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   },
   {
     "version": "25.10",
@@ -427,6 +469,7 @@
     "release": "2025-10-09",
     "eol": "2026-07-09",
     "eol-server": null,
-    "eol-esm": null
+    "eol-esm": null,
+    "eol-legacy": null
   }
 ]
