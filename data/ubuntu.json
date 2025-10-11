@@ -471,5 +471,16 @@
     "eol-server": null,
     "eol-esm": null,
     "eol-legacy": null
+  },
+  {
+    "version": "26.04 LTS",
+    "codename": "Resolute Raccoon",
+    "series": "resolute",
+    "created": "2025-10-09",
+    "release": "2026-04-23",
+    "eol": "2031-05-29",
+    "eol-server": "2031-05-29",
+    "eol-esm": "2036-04-23",
+    "eol-legacy": "2038-04-27"
   }
 ]
