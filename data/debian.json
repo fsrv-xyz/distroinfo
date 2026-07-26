@@ -211,8 +211,8 @@
   },
   {
     "version": "",
-    "codename": "Experimental",
-    "series": "experimental",
+    "codename": "RC-Buggy",
+    "series": "rc-buggy",
     "created": "1993-08-16",
     "release": null,
     "eol": null,
