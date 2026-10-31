@@ -493,5 +493,16 @@
     "eol-server": null,
     "eol-esm": null,
     "eol-legacy": null
+  },
+  {
+    "version": "27.04",
+    "codename": "Tenacious T-Rex",
+    "series": "tenacious",
+    "created": "2026-10-16",
+    "release": "2027-04-22",
+    "eol": "2028-01-20",
+    "eol-server": null,
+    "eol-esm": null,
+    "eol-legacy": null
   }
 ]
