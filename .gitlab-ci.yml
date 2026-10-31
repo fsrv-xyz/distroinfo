@@ -6,6 +6,9 @@ stages:
 
 include:
   - component: $CI_SERVER_FQDN/fsrvcorp/ci-components/golang@0.1.0
+  - component: $CI_SERVER_FQDN/fsrvcorp/ci-components/semver@0.1.0
+    inputs:
+      prefix: v
 
 check update:
   image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:4fac563d0e4963df1a94881cb08c09fcca3f6351d81d1a2e7287070d12d7649a
@@ -49,11 +52,11 @@ commit_update:
       if test -n "$(git status --porcelain)"; then
         git checkout -b "update_deb_${DEB_VERSION}"
         git add data/*.json
-        git commit -m "update dist-info-data debian package ${DEB_VERSION}"
-        git push update_origin HEAD -o merge_request.create \
+        git commit -m "feat: update distro-info-data to ${DEB_VERSION}"
+        git push --force update_origin HEAD -o merge_request.create \
           -o merge_request.target=${CI_DEFAULT_BRANCH} \
           -o merge_request.assign=${GITLAB_USER_LOGIN} \
-          -o merge_request.title="update dist-info-data debian package ${DEB_VERSION}" \
+          -o merge_request.title="feat: update distro-info-data to ${DEB_VERSION}" \
           -o merge_request.label="Source::CI"
       fi
 
