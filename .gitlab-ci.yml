@@ -11,7 +11,7 @@ include:
       prefix: v
 
 check update:
-  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:56850ab480cadbf006018acc47a79a2d62ba3b1fed60e4f93d0a011489afe0db
+  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:e8c6ab283dd822cfe5c0f54b03d7575c9e6464f4077ceefc5f184bca6e543473
   stage: update-check
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
@@ -31,7 +31,7 @@ check update:
       - data/*.json
 
 commit_update:
-  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:56850ab480cadbf006018acc47a79a2d62ba3b1fed60e4f93d0a011489afe0db
+  image: registry.fsrv.services/fsrvcorp/container/debian-base:latest@sha256:e8c6ab283dd822cfe5c0f54b03d7575c9e6464f4077ceefc5f184bca6e543473
   stage: update
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
